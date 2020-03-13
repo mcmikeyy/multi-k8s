@@ -10,7 +10,7 @@ docker push mconnors/multi-client:$SHA
 docker push mconnors/multi-server:$SHA
 docker push mconnors/multi-worker:$SHA
 
-kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=mconnors/multi-server:$SHA
-kubectl set image deployments/client-deployment client=mconnors/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=mconnors/multi-worker:$SHA
+# kubectl apply -f k8s
+# kubectl set image deployments/server-deployment server=mconnors/multi-server:$SHA
+# kubectl set image deployments/client-deployment client=mconnors/multi-client:$SHA
+# kubectl set image deployments/worker-deployment worker=mconnors/multi-worker:$SHA
